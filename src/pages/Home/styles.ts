@@ -72,3 +72,90 @@ export const VerticalDivider = styled.div`
   width: 100%;
   background-color: orange;
 `;
+
+export const Team = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  h1 {
+    margin: 1.5% 0;
+  }
+`;
+
+export const TeamList = styled.div`
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 18% 18% 18% 18% 18%;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0 5%;
+`;
+
+export const Member = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  img {
+    border-radius: 50%;
+  }
+  span {
+    width: 100%;
+    text-align: center;
+  }
+`;
+
+export const SocialMedia = styled.div`
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    margin-top: 1%;
+  }
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      &:first-child {
+        width: 7%;
+        height: 7%;
+      }
+      cursor: pointer;
+      width: 15%;
+      height: 15%;
+    }
+  }
+`;
+
+export const Footer = styled.footer`
+  width: 100%;
+  padding: 2% 2%;
+  img {
+    height: 13%;
+    width: 13%;
+  }
+  div {
+    margin-bottom: 1%;
+    &:first-child {
+      display: flex;
+      div {
+        margin-right: 0;
+        margin-left: auto;
+        a {
+          &:first-child {
+            margin-right: 5%;
+          }
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  span {
+    a {
+      text-decoration: underline;
+    }
+  }
+`;

@@ -3,11 +3,20 @@ import {
   Body,
   Content,
   ContentColum,
+  Footer,
   Header,
+  Member,
+  SocialMedia,
+  Team,
+  TeamList,
   TextBox,
   VerticalDivider,
 } from "./styles";
 import photo from "../../assets/banner.png";
+import lucas from "../../assets/lucas.png";
+import instagramLogo from "../../assets/instagramLogo.svg";
+import spotifyLogo from "../../assets/spotifyLogo.svg";
+import unbLogo from "../../assets/unbLogo.jpeg";
 
 const Home = (): JSX.Element => {
   return (
@@ -29,7 +38,7 @@ const Home = (): JSX.Element => {
         <h1>Ao que se refere memória, trauma e colonialismo?</h1>
         <Content>
           <ContentColum>
-            <img src={photo} alt="" />
+            <img src={photo} />
             <TextBox>
               <h3>Algum titulo aqui</h3>
               <p>
@@ -57,10 +66,80 @@ const Home = (): JSX.Element => {
                 deleniti nisi fugiat dicta consectetur voluptas quos nihil!
               </p>
             </TextBox>
-            <img src={photo} alt="" />
+            <img src={photo} />
           </ContentColum>
         </Content>
       </Body>
+      <Team>
+        <h1>Nosso time</h1>
+        <TeamList>
+          <Member>
+            <img src={lucas} />
+            <span>
+              Lucas <br />
+              Sales
+            </span>
+          </Member>
+          <Member>
+            <img src={lucas} />
+            <span>Lucas Sales</span>
+          </Member>
+          <Member>
+            <img src={lucas} />
+            <span>Lucas Sales</span>
+          </Member>
+          <Member>
+            <img src={lucas} />
+            <span>Lucas Sales</span>
+          </Member>
+          <Member>
+            <img src={lucas} />
+            <span>Lucas Sales</span>
+          </Member>
+        </TeamList>
+      </Team>
+      <SocialMedia>
+        <h1>Nos sigam nas redes sociais!</h1>
+        <div>
+          <img src={instagramLogo} />
+          <img
+            src={spotifyLogo}
+            onClick={() => {
+              window.open(
+                "https://open.spotify.com/show/00tA5N1DyJmbanlvM0R1Eu",
+                "_blank",
+              );
+            }}
+          />
+        </div>
+      </SocialMedia>
+      <Footer>
+        <div>
+          <img src={unbLogo} />
+          <div>
+            <a href="" target="_blank">
+              Instagram
+            </a>
+            <a
+              href="https://open.spotify.com/show/00tA5N1DyJmbanlvM0R1Eu"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Spotify
+            </a>
+          </div>
+        </div>
+        <span>
+          Developed by{" "}
+          <a
+            href="https://github.com/Lux-Sales/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Lucas Sales
+          </a>
+        </span>
+      </Footer>
     </>
   );
 };
