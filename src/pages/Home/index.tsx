@@ -12,7 +12,6 @@ import {
   TextBox,
   VerticalDivider,
 } from "./styles";
-import banner from "../../assets/banner.png";
 import lucas from "../../assets/lucas.png";
 import marina from "../../assets/marina.jpeg";
 import davi from "../../assets/davi.jpeg";
