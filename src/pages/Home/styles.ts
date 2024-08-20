@@ -64,7 +64,7 @@ export const ContentColum = styled.div`
 export const TextBox = styled.div`
   width: fill;
   height: 100%;
-  overflow: scroll;
+  overflow: auto;
 `;
 
 export const VerticalDivider = styled.div`
@@ -96,9 +96,11 @@ export const Member = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: fit-content;
+  height: 80%;
   img {
     border-radius: 50%;
+    width: 65%;
+    height: 65%;
   }
   span {
     width: 100%;

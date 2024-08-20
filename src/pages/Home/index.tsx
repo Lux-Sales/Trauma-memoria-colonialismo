@@ -12,11 +12,17 @@ import {
   TextBox,
   VerticalDivider,
 } from "./styles";
-import photo from "../../assets/banner.png";
+import banner from "../../assets/banner.png";
 import lucas from "../../assets/lucas.png";
+import marina from "../../assets/marina.jpeg";
+import davi from "../../assets/davi.jpeg";
+import pedro from "../../assets/pedro.jpg";
+import thiago from "../../assets/thiago.jpeg";
 import instagramLogo from "../../assets/instagramLogo.svg";
 import spotifyLogo from "../../assets/spotifyLogo.svg";
 import unbLogo from "../../assets/unbLogo.jpeg";
+import escravidao from "../../assets/escravidao.jpg";
+import igualdade from "../../assets/igualdade.jpeg";
 
 const Home = (): JSX.Element => {
   return (
@@ -38,35 +44,34 @@ const Home = (): JSX.Element => {
         <h1>Ao que se refere memória, trauma e colonialismo?</h1>
         <Content>
           <ContentColum>
-            <img src={photo} />
+            <img src={escravidao} />
             <TextBox>
-              <h3>Algum titulo aqui</h3>
+              <h3>Nossa luta</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eos
-                maiores dolorem expedita fuga doloribus odio asperiores tempora
-                exercitationem autem nesciunt non quasi ad reprehenderit vero,
-                dolores officiis veniam rem! Aut totam sunt aspernatur magnam
-                veniam dolor odio odit. A accusantium repudiandae quam mollitia
-                ex earum natus illum consequatur qui, molestiae officiis
-                deleniti nisi fugiat dicta consectetur voluptas quos nihil!
+                A luta para mitigar o trauma colonial ocorre desde que o trauma
+                propriamente nasceu. Nesse contexto, quando o Brasil
+                encontrava-se na condição de colônia, houve o desenvolvimento de
+                uma narrativa pautada na diferença racial. Em primeira
+                instância, houve a separação da população em sujeito e objetos
+                de acordo com bell hooks.
               </p>
             </TextBox>
           </ContentColum>
           <VerticalDivider />
           <ContentColum>
             <TextBox>
-              <h3>Algum titulo aqui</h3>
+              <h3>O trauma colonial</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eos
-                maiores dolorem expedita fuga doloribus odio asperiores tempora
-                exercitationem autem nesciunt non quasi ad reprehenderit vero,
-                dolores officiis veniam rem! Aut totam sunt aspernatur magnam
-                veniam dolor odio odit. A accusantium repudiandae quam mollitia
-                ex earum natus illum consequatur qui, molestiae officiis
-                deleniti nisi fugiat dicta consectetur voluptas quos nihil!
+                Segundo o IBGE em 2023, 56,1% da população brasileira é composta
+                por pessoas pretas. Apesar disso, somente 48,3% desse grupo
+                estão no curso superior e menos. Em outro cenário, 65,1% da
+                população preta brasileira está desempregada. Além disso, a
+                grande maioria não conhece a sua origem cultural. Os dados
+                expostos mostram a desigualdade racial que ocorre no Brasil,
+                consequência do trauma colonial.
               </p>
             </TextBox>
-            <img src={photo} />
+            <img src={igualdade} />
           </ContentColum>
         </Content>
       </Body>
@@ -74,34 +79,59 @@ const Home = (): JSX.Element => {
         <h1>Nosso time</h1>
         <TeamList>
           <Member>
-            <img src={lucas} />
+            <img src={davi} />
             <span>
-              Lucas <br />
-              Sales
+              Davi
+              <br />
+              Camilo
             </span>
           </Member>
           <Member>
             <img src={lucas} />
-            <span>Lucas Sales</span>
+            <span>
+              Lucas
+              <br />
+              Sales
+            </span>
+          </Member>
+          <Member title="A mais calma">
+            <img src={marina} />
+            <span>
+              Marina
+              <br />
+              Galdi
+            </span>
           </Member>
           <Member>
-            <img src={lucas} />
-            <span>Lucas Sales</span>
+            <img src={pedro} />
+            <span>
+              Pedro
+              <br />
+              Dionísio
+            </span>
           </Member>
           <Member>
-            <img src={lucas} />
-            <span>Lucas Sales</span>
-          </Member>
-          <Member>
-            <img src={lucas} />
-            <span>Lucas Sales</span>
+            <img src={thiago} />
+            <span>
+              Thiago
+              <br />
+              Alves
+            </span>
           </Member>
         </TeamList>
       </Team>
       <SocialMedia>
         <h1>Nos sigam nas redes sociais!</h1>
         <div>
-          <img src={instagramLogo} />
+          <img
+            src={instagramLogo}
+            onClick={() => {
+              window.open(
+                "https://www.instagram.com/cicatrizesdigitais/",
+                "_blank",
+              );
+            }}
+          />
           <img
             src={spotifyLogo}
             onClick={() => {
@@ -117,7 +147,11 @@ const Home = (): JSX.Element => {
         <div>
           <img src={unbLogo} />
           <div>
-            <a href="" target="_blank">
+            <a
+              href="https://www.instagram.com/cicatrizesdigitais/"
+              target="_blank"
+              rel="noreferrer"
+            >
               Instagram
             </a>
             <a
