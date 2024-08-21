@@ -5,13 +5,13 @@
 <br>
 
 <h4>Hello!</h4>
-<p>This is a frontend template that i've built, to use in my projects, of college, personal, or even in
-  professional.<br>
+<p>This is a landing page developed to a college project about colonialism. Here's the link to the website: <a href="https://memoria-trauma-colonialismo.web.app/"target="_blank">https://memoria-trauma-colonialismo.web.app/</a>
+
   I've started this react project using <code>Vite</code>, with the template of <code>Typescript</code> and here, we
   have linting with <code>eslint</code> , <code>editor config</code> and <code>prettier.</code><br>
-  I've been dealing with requests using <code>axios</code> and with styles, using <code>styled-components.</code><br>
+  I've been dealing with styles, using <code>styled-components.</code> and <code>Tailwind</code><br>
   For routes, i'm using <code>react-router-dom.</code></br>
-  Testing with <code>Vitest</code>,<code>Jest</code> and <code>React Testing Library</code>,
+  And deploying in <code>firebase</code>
 </p>
 
 <h4>How to run</h4>
